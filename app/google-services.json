@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "866195363691",
+    "firebase_url": "https://marsview-codepeaker.firebaseio.com",
+    "project_id": "marsview-codepeaker",
+    "storage_bucket": "marsview-codepeaker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866195363691:android:bfca189b9927872c",
+        "android_client_info": {
+          "package_name": "com.codepeaker.marsview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866195363691-10ciaka6r5nlb8q612t7en41m946h3lr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codepeaker.marsview",
+            "certificate_hash": "eb6cfa24459aef2dcf2f5d1115e9d064279799d0"
+          }
+        },
+        {
+          "client_id": "866195363691-91dqfiejjs78pminluirdvuvnhginb0r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuLEAlTQRMO_XSw9lGKtLTEg9w-iVj-Bo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866195363691-91dqfiejjs78pminluirdvuvnhginb0r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
