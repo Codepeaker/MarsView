@@ -36,15 +36,13 @@ public class UploadService {
     }
 
     public void uploadFile(final Context context, Uri croppedFilePath) {
-        //checking if file is available
         AppUtils.getInstance().showPDialog(context, "Uploading");
 
-        //getting the storage reference
         StorageReference storageReference = FirebaseStorage.getInstance().getReference();
-        final StorageReference sRef = storageReference.child(Constants.STORAGE_PATH_UPLOADS
+        final StorageReference sRef = storageReference.child(Constants.STORAGE_PATH
                 + "Image_" + System.currentTimeMillis() + "." + getFileExtension(context, croppedFilePath));
-        final DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference(Constants.DATABASE_PATH_UPLOADS);
-        //adding the file to reference
+        final DatabaseReference mDatabase = FirebaseDatabase.getInstance()
+                .getReference(Constants.DATABASE_PATH);
         sRef.putFile(croppedFilePath).continueWithTask(new Continuation<UploadTask.TaskSnapshot
                 , Task<Uri>>() {
 
@@ -59,12 +57,9 @@ public class UploadService {
         }).addOnCompleteListener(new OnCompleteListener<Uri>() {
             @Override
             public void onComplete(@NonNull Task<Uri> task) {
-                //dismissing the progress dialog
                 AppUtils.getInstance().hidePDialog(context);
                 if (task.isSuccessful()) {
-                    //displaying success toast
                     Toast.makeText(context, "File Uploaded ", Toast.LENGTH_LONG).show();
-                    //creating the upload object to store uploaded image details
                     Upload upload = new Upload(task.getResult().toString());
                     //adding an upload to firebase database
                     String uploadId = mDatabase.push().getKey();

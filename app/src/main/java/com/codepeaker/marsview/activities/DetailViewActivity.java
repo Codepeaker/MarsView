@@ -23,6 +23,7 @@ public class DetailViewActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_detailview);
+        setTitle("Detail View");
         int selectedImage = getIntent().getExtras().getInt(Constants.POSITION);
         List<Upload> uploads = getIntent().getExtras().getParcelableArrayList(Constants.IMAGES_URLS);
         ConstraintLayout.LayoutParams paramsPager = new ConstraintLayout.LayoutParams(

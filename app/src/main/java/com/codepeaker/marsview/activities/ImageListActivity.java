@@ -91,14 +91,8 @@ public class ImageListActivity extends AppCompatActivity implements ImageListAda
                 if (croppedFilePath == null) {
                     AppUtils.getInstance().showPTALToast(this);
                 }
-
                 UploadService.getInstance().uploadFile(this, croppedFilePath);
-//                try {
-//                    Bitmap bitmap = MediaStore.Images.Media.getBitmap(getContentResolver(), croppedFilePath);
-//                    imageView.setImageBitmap(bitmap);
-//                } catch (IOException e) {
-//                    e.printStackTrace();
-//                }
+
             } else if (resultCode == CropImage.CROP_IMAGE_ACTIVITY_RESULT_ERROR_CODE) {
                 Toast.makeText(this, result.getError().getMessage()
                         , Toast.LENGTH_LONG).show();

@@ -13,12 +13,6 @@ public class Upload implements Parcelable {
     public Upload(String url) {
         this.url = url;
     }
-
-    public Upload(String name, String url) {
-        this.name = name;
-        this.url = url;
-    }
-
     protected Upload(Parcel in) {
         name = in.readString();
         url = in.readString();
