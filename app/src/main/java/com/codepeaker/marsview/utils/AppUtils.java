@@ -18,6 +18,12 @@ public class AppUtils {
         return appUtils;
     }
 
+    public void showPTALToast(Context context) {
+        Toast.makeText(context, "Faced some error, please try again later"
+                , Toast.LENGTH_LONG).show();
+    }
+
+
     public void showPDialog(Context context, String msg) {
         if (context != null) {
             progressDialog = new ProgressDialog(context);
@@ -30,10 +36,5 @@ public class AppUtils {
         if (context != null && progressDialog.isShowing()) {
             progressDialog.dismiss();
         }
-    }
-
-    public void showPTALToast(Context context) {
-        Toast.makeText(context, "Faced some error, please try again later"
-                , Toast.LENGTH_LONG).show();
     }
 }

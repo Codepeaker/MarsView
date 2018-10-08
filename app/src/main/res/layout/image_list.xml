@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/size_5">
 
-        <androidx.cardview.widget.CardView
+        <android.support.v7.widget.CardView
             android:layout_width="@dimen/size_0"
             android:layout_height="wrap_content"
             app:cardElevation="@dimen/size_5"
@@ -17,14 +17,14 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
-                android:padding="@dimen/size_5"
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/size_200"
                 android:adjustViewBounds="true"
+                android:padding="@dimen/size_5"
                 android:scaleType="centerCrop"
                 tools:src="@mipmap/ic_launcher" />
-        </androidx.cardview.widget.CardView>
+        </android.support.v7.widget.CardView>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
 </layout>

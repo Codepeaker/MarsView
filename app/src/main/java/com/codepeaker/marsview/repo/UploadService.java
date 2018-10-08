@@ -3,6 +3,7 @@ package com.codepeaker.marsview.repo;
 import android.content.ContentResolver;
 import android.content.Context;
 import android.net.Uri;
+import android.support.annotation.NonNull;
 import android.webkit.MimeTypeMap;
 import android.widget.Toast;
 
@@ -19,7 +20,6 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 
-import androidx.annotation.NonNull;
 
 public class UploadService {
 

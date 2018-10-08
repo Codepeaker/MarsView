@@ -1,16 +1,16 @@
 package com.codepeaker.marsview.viewmodel;
 
 import android.app.Application;
+import android.arch.lifecycle.AndroidViewModel;
+import android.arch.lifecycle.LiveData;
+import android.arch.lifecycle.MutableLiveData;
+import android.support.annotation.NonNull;
 
-import com.codepeaker.marsview.repo.model.Upload;
 import com.codepeaker.marsview.repo.FirebaseDbListener;
+import com.codepeaker.marsview.repo.model.Upload;
 
 import java.util.List;
 
-import androidx.annotation.NonNull;
-import androidx.lifecycle.AndroidViewModel;
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
 
 public class ImageListViewModel extends AndroidViewModel {
 

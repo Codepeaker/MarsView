@@ -1,6 +1,10 @@
 package com.codepeaker.marsview.activities;
 
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.constraint.ConstraintLayout;
+import android.support.v7.app.AppCompatActivity;
 import android.view.ViewGroup;
 
 import com.codepeaker.marsview.R;
@@ -10,11 +14,6 @@ import com.codepeaker.marsview.repo.model.Upload;
 import com.codepeaker.marsview.utils.Constants;
 
 import java.util.List;
-
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.databinding.DataBindingUtil;
 
 public class DetailViewActivity extends AppCompatActivity {
     ActivityDetailviewBinding binding;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
@@ -10,7 +10,8 @@
         tools:context=".activities.ImageListActivity"
         tools:showIn="@layout/activity_image_list">
 
-        <androidx.recyclerview.widget.RecyclerView
+
+        <android.support.v7.widget.RecyclerView
             android:id="@+id/image_rv"
             android:layout_width="@dimen/size_0"
             android:layout_height="@dimen/size_0"
@@ -21,5 +22,5 @@
             app:layout_constraintTop_toTopOf="parent" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </android.support.constraint.ConstraintLayout>
 </layout>

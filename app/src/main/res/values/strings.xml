@@ -4,4 +4,5 @@
     <string name="name">Name</string>
     <string name="title_activity_image_list">ImageListActivity</string>
     <string name="you_uploaded_images">You Uploaded Images</string>
+    <string name="please_wait">Please Wait...</string>
 </resources>

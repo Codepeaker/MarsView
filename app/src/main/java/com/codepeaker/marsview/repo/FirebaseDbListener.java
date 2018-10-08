@@ -1,6 +1,8 @@
 package com.codepeaker.marsview.repo;
 
 import android.app.Application;
+import android.arch.lifecycle.LiveData;
+import android.arch.lifecycle.MutableLiveData;
 
 import com.codepeaker.marsview.repo.model.Upload;
 import com.codepeaker.marsview.utils.AppUtils;
@@ -14,8 +16,6 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import androidx.lifecycle.LiveData;
-import androidx.lifecycle.MutableLiveData;
 
 public class FirebaseDbListener {
     private static FirebaseDbListener firebaseDbListener;

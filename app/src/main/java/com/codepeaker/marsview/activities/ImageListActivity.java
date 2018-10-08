@@ -1,16 +1,22 @@
 package com.codepeaker.marsview.activities;
 
+import android.arch.lifecycle.Observer;
+import android.arch.lifecycle.ViewModelProviders;
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
 import android.view.View;
 import android.widget.Toast;
 
 import com.codepeaker.marsview.R;
-import com.codepeaker.marsview.repo.UploadService;
 import com.codepeaker.marsview.adapter.ImageListAdapter;
 import com.codepeaker.marsview.databinding.ActivityImageListBinding;
 import com.codepeaker.marsview.databinding.ContentImageListBinding;
+import com.codepeaker.marsview.repo.UploadService;
 import com.codepeaker.marsview.repo.model.Upload;
 import com.codepeaker.marsview.utils.AppUtils;
 import com.codepeaker.marsview.utils.Constants;
@@ -22,12 +28,6 @@ import com.theartofdev.edmodo.cropper.CropImageView;
 import java.util.ArrayList;
 import java.util.List;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.databinding.DataBindingUtil;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
-import androidx.recyclerview.widget.GridLayoutManager;
 
 public class ImageListActivity extends AppCompatActivity implements ImageListAdapter.OnImageClickInterface {
 
@@ -62,7 +62,7 @@ public class ImageListActivity extends AppCompatActivity implements ImageListAda
             }
         });
 
-        AppUtils.getInstance().showPDialog(this, "Please wait...");
+        AppUtils.getInstance().showPDialog(this,"Please wait..." );
 
         binding.fab.setOnClickListener(new View.OnClickListener() {
             @Override
